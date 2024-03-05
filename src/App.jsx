@@ -1,11 +1,19 @@
+import { useState } from 'react'
 import './App.css'
-import { Home } from './components/pages/Home/Home'
+
 
 function App() {
 
   return (
     <>
-      <Home />
+    <input type="text" content='hola' />
+    <button>ACA</button>
+    <hr />
+    <div>
+
+    </div>
+
+      
     </>
   )
 }
