@@ -7,6 +7,18 @@ let counter = 0
 
 function App() {
 
+  const myReference = useRef('')
+
+  const [work, setWork] = useState(Content)
+
+  const handleSetTasks = ()=>{
+    counter++
+    let newWork = {
+      _id: counter,
+      content: myReference.current.value,
+    }
+    setWork({...Content,newWork})
+  }
 
   return (
     <>
